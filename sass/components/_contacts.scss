@@ -1,0 +1,30 @@
+.contacts {
+  @extend %lists;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.contacts__item {
+  &:last-child {
+    margin-left: 50px;
+  }
+}
+
+.contacts__link {
+  color: $text-color;
+  @include fontStyle(500, 14px, 16px, 0.02em);
+  text-decoration: none;
+  fill: $nav-icon;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $secondary-icon;
+  }
+}
+
+.contacts__icon {
+  margin-right: 10px;
+}

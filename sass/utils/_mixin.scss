@@ -1,0 +1,27 @@
+@mixin fontStyle($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh / $fs;
+  letter-spacing: $ls;
+}
+
+@mixin centeredFlex($type: flex, $justify: center, $align: center) {
+  display: $type;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin alignCards($variable, $value) {
+  flex-basis: calc(100 / #{$variable} - #{$value});
+  margin-left: $value;
+}
+
+@mixin negativeMargin($value: -30px) {
+  margin-left: -30px;
+}
+
+@mixin position($content: '', $pos: absolute, $display: block) {
+  content: $content;
+  position: $pos;
+  display: $display;
+}

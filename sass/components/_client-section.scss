@@ -1,0 +1,43 @@
+.client__title {
+  color: $title-color;
+  @include fontStyle(700, 36px, 42px, 0.03em);
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.client-list {
+  @extend %lists;
+  @include centeredFlex();
+
+  margin: 0;
+  padding-left: 0;
+
+  @include negativeMargin();
+}
+
+.client-list__item {
+  @include alignCards(6, 30px);
+}
+
+.client-list__link {
+  @include centeredFlex();
+
+  cursor: pointer;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $primary-icon;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  fill: $primary-icon;
+
+  transition: fill 250ms $transition-timing, border 250ms $transition-timing;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $secondary-icon;
+    fill: $secondary-icon;
+  }
+}

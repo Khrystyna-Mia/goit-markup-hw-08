@@ -1,0 +1,22 @@
+.logo-header {
+  @extend %logo;
+  color: $black-color;
+
+  margin-bottom: 0px;
+}
+
+.logo-header__text {
+  color: $accent-color;
+}
+
+.logo-footer {
+  @extend %logo;
+  color: $white-color;
+
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo-footer__text {
+  color: $accent-color;
+}

@@ -1,0 +1,66 @@
+.team {
+  background-color: $secondary-bg-color;
+}
+
+.team__title {
+  color: $title-color;
+  @include fontStyle(700, 36px, 42px, 0.03em);
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  @extend %lists;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  padding: 0;
+}
+
+.team-list__item {
+  width: 270px;
+  margin: 15px;
+  background-color: $white-color;
+  box-shadow: $card-shadow;
+  border-radius: $radius;
+}
+
+.team-card__employee {
+  color: $title-color;
+  @include fontStyle(500, 16px, 19px, 0.03em);
+  text-align: center;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-card__text {
+  color: $text-color;
+  @include fontStyle(400, 16px, 19px, 0.03em);
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+/* Social links */
+.team-link {
+  @extend %lists;
+  @include centeredFlex();
+  margin-bottom: 30px;
+}
+
+.team-icon {
+  border-radius: 50%;
+  margin-right: 10px;
+  fill: $primary-icon;
+
+  transition: fill 250ms $transition-timing, background-color 250ms $transition-timing;
+
+  &:hover,
+  &:focus {
+    fill: $third-icon;
+    background-color: $secondary-icon;
+  }
+}

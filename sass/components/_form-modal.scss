@@ -1,0 +1,214 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  transition: opacity 250ms $transition-timing;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.1);
+  opacity: 0;
+}
+
+.modal {
+  /*position: fixed;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  width: 528px;
+  height: 581px;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transition: transform 250ms $transition-timing, opacity 250ms $transition-timing;
+}
+
+.close-button {
+  position: absolute;
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  display: inline-flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border-color: $white-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: var(--third-icon);
+
+  transition: fill 250ms var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    fill: $secondary-icon;
+  }
+}
+
+/*Form modal*/
+.signup-form {
+  padding: 40px;
+}
+
+.signup-form__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: (23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $title-color;
+
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 28px;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.form-field label {
+  position: absolute;
+  top: -18px;
+  left: 0;
+
+  @include fontStyle(400, 12px, 14px, 0.01em);
+  margin-bottom: 4px;
+  color: $text-color;
+}
+
+.form-field input,
+textarea {
+  @include fontStyle(400, 12px, 14px, 0.01em);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  cursor: pointer;
+
+  transition: fill 250ms $transition-timing, border-color 250ms $transition-timing,
+    outline 250ms $transition-timing;
+
+  &:hover,
+  &:focus {
+    border-color: $secondary-icon;
+    outline: $secondary-icon;
+  }
+}
+
+input {
+  height: 40px;
+  margin: 0;
+  padding: 0px 0px 0px 42px;
+
+  &:hover ~ .form-field__icon,
+  &:focus ~ .form-field__icon {
+    fill: $secondary-icon;
+  }
+}
+
+.form-field__icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  transition: fill 250ms $transition-timing;
+}
+
+.form-field__comment {
+  max-height: 120px;
+  padding: 12px 16px;
+
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    @include fontStyle(400, 14px, 16px, 0.01em);
+  }
+}
+
+.checkbox-label {
+  @include centeredFlex();
+  margin-bottom: 30px;
+}
+
+.checkbox-label__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-label__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.checkbox-label__input:checked + .checkbox-label__icon {
+  background-image: url('../images/check-mark.svg');
+  background-color: $accent-color;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $accent-color;
+
+  transition: background-color 250ms $transition-timing;
+}
+
+.checkbox-label__link {
+  margin-left: 5px;
+  color: $secondary-icon;
+  text-decoration-line: underline;
+}
+
+.signup-form__btn {
+  @extend %button;
+  @include fontStyle(700, 16px, 30px, 0.06em);
+  align-items: center;
+  padding: 10px 55px;
+  min-width: 200px;
+  border: none;
+  border-color: transparent;
+  box-shadow: $box-shadow;
+
+  transition: background-color 250ms $transition-timing, box-shadow 250ms $transition-timing;
+
+  &:hover,
+  &:focus {
+    border-radius: 4px;
+    background-color: $btn-color;
+    box-shadow: $box-shadow;
+  }
+}

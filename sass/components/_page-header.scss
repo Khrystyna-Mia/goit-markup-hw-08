@@ -1,0 +1,9 @@
+.page-header {
+  border-bottom: 1px solid $border-color;
+}
+
+.page-header__nav {
+  @include centeredFlex(flex);
+  align-items: center;
+  height: 80px;
+}

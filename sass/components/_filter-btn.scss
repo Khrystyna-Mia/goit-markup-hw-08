@@ -1,0 +1,28 @@
+.filter {
+  color: $title-color;
+  @include fontStyle(500, 16px, 26px, 0.03em);
+  text-align: center;
+
+  @include centeredFlex();
+
+  transition: color 250ms $transition-timing, background-color 250ms transition-timing,
+    box-shadow 250ms $transition-timing;
+}
+
+.filter__btn {
+  margin-top: 94px;
+  margin-right: 8px;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-color: transparent;
+  box-shadow: $btn-shadow;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+}
