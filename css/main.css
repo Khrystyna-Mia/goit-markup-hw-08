@@ -424,10 +424,6 @@ textarea {
   padding-left: 0;
 }
 
-.site-nav__item:not(:first-child) {
-  margin-left: 50px;
-}
-
 .site-nav__link {
   color: #212121;
   font-weight: 500;
@@ -1070,6 +1066,26 @@ input:focus ~ .form-field__icon {
     letter-spacing: 0.03em;
     text-align: center;
   }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

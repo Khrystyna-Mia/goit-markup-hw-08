@@ -7,11 +7,11 @@
   padding-left: 0;
 }
 
-.site-nav__item {
-  &:not(:first-child) {
-    margin-left: 50px;
-  }
-}
+// .site-nav__item {
+//   &:not(:first-child) {
+//     margin-left: 50px;
+//   }
+// }
 
 .site-nav__link {
   color: $title-color;
