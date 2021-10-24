@@ -304,10 +304,28 @@ summary {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
@@ -377,11 +395,7 @@ textarea {
 }
 
 .page-header__nav {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  align-items: center;
-  height: 80px;
 }
 
 .logo-header {
@@ -404,10 +418,8 @@ textarea {
 }
 
 .site-nav {
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 93px;
   padding-left: 0;
 }
 
@@ -424,8 +436,6 @@ textarea {
   text-decoration: none;
   display: block;
   margin-bottom: 0px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -434,36 +444,14 @@ textarea {
   fill: #2196f3;
 }
 
-.site-nav__link {
-  position: relative;
-}
-
-.site-nav__link::after {
-  content: "";
-  position: absolute;
-  display: block;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  opacity: 0;
-}
-
 .site-nav__link:hover::after, .site-nav__link:focus::after {
   opacity: 1;
 }
 
 .contacts {
-  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
-}
-
-.contacts__item:last-child {
-  margin-left: 50px;
 }
 
 .contacts__link {
@@ -486,12 +474,7 @@ textarea {
 }
 
 .hero {
-  background-color: #2f303a;
-  max-width: 1600px;
-  height: 600px;
   text-align: center;
-  margin: 0 auto;
-  padding: 200px 0px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg.img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -557,8 +540,6 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  width: 528px;
-  height: 581px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -747,24 +728,10 @@ input:focus ~ .form-field__icon {
   display: none;
 }
 
-.advantage-cards__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.advantage-cards__item {
-  flex-basis: calc(100 / 4 - 30px);
-  margin-left: 30px;
-  max-width: 270px;
-}
-
 .advantage-cards__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -808,8 +775,6 @@ input:focus ~ .form-field__icon {
 }
 
 .work-cards {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -869,8 +834,6 @@ input:focus ~ .form-field__icon {
 }
 
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: -15px;
   padding: 0;
 }
@@ -936,26 +899,12 @@ input:focus ~ .form-field__icon {
 }
 
 .client-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
   padding-left: 0;
-  margin-left: -30px;
-}
-
-.client-list__item {
-  flex-basis: calc(100 / 6 - 30px);
-  margin-left: 30px;
 }
 
 .client-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   box-sizing: border-box;
@@ -971,11 +920,6 @@ input:focus ~ .form-field__icon {
 .page-footer {
   background-color: #2f303a;
   padding: 60px 0;
-}
-
-.container.footer {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .footer-social {
@@ -1028,15 +972,8 @@ input:focus ~ .form-field__icon {
 }
 
 .social {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin: 0;
   padding: 0;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 10px;
 }
 
 .social__icon {
@@ -1049,11 +986,6 @@ input:focus ~ .form-field__icon {
 .social__icon:hover, .social__icon:focus {
   background-color: #2196f3;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.form-subscription {
-  margin-top: 12px;
-  margin-left: 93px;
 }
 
 .form-subscription__block {

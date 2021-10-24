@@ -9,24 +9,24 @@
 
 .client-list {
   @extend %lists;
-  @include centeredFlex();
+  // @include centeredFlex();
 
   margin: 0;
   padding-left: 0;
 
-  @include negativeMargin();
+  // @include negativeMargin();
 }
 
-.client-list__item {
-  @include alignCards(6, 30px);
-}
+// .client-list__item {
+//   @include alignCards(6, 30px);
+// }
 
 .client-list__link {
-  @include centeredFlex();
+  // @include centeredFlex();
 
   cursor: pointer;
-  width: 170px;
-  height: 92px;
+  // width: 170px;
+  // height: 92px;
   border: 1px solid $primary-icon;
   border-radius: 4px;
   box-sizing: border-box;

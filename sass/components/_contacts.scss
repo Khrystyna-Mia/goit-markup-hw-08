@@ -1,16 +1,16 @@
 .contacts {
   @extend %lists;
-  display: flex;
+  // display: flex;
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
 }
 
-.contacts__item {
-  &:last-child {
-    margin-left: 50px;
-  }
-}
+// .contacts__item {
+//   &:last-child {
+//     margin-left: 50px;
+//   }
+// }
 
 .contacts__link {
   color: $text-color;

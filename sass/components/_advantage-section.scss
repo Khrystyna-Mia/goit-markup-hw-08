@@ -4,21 +4,21 @@
 
 .advantage-cards__list {
   @extend %lists;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-top: -30px;
+  // margin-left: -30px;
 }
 
-.advantage-cards__item {
-  @include alignCards(4, 30px);
-  max-width: 270px;
-}
+// .advantage-cards__item {
+//   @include alignCards(4, 30px);
+//    max-width: 270px;
+// }
 
 .advantage-cards__thumb {
   @include centeredFlex();
 
-  max-width: 270px;
+  // max-width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;

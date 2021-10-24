@@ -3,7 +3,7 @@
   @include fontStyle(500, 16px, 26px, 0.03em);
   text-align: center;
 
-  @include centeredFlex();
+  // @include centeredFlex();
 
   transition: color 250ms $transition-timing, background-color 250ms transition-timing,
     box-shadow 250ms $transition-timing;
