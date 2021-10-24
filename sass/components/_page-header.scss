@@ -4,6 +4,7 @@
 
 .page-header__nav {
   // @include centeredFlex(flex);
-  align-items: center;
-  // height: 80px;
+  // align-items: center;
+  width: 100%;
+  min-height: 80px;
 }

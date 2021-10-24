@@ -395,7 +395,8 @@ textarea {
 }
 
 .page-header__nav {
-  align-items: center;
+  width: 100%;
+  min-height: 80px;
 }
 
 .logo-header {
