@@ -152,10 +152,10 @@ input {
   }
 }
 
-.checkbox-label {
-  @include centeredFlex();
-  margin-bottom: 30px;
-}
+// .checkbox-label {
+//   // @include centeredFlex();
+//   // margin-bottom: 30px;
+// }
 
 .checkbox-label__input {
   position: absolute;
@@ -188,7 +188,7 @@ input {
 }
 
 .checkbox-label__link {
-  margin-left: 5px;
+  // margin-left: 5px;
   color: $secondary-icon;
   text-decoration-line: underline;
 }
