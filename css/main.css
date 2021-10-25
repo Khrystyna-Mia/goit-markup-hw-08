@@ -659,13 +659,6 @@ input:focus ~ .form-field__icon {
   letter-spacing: 0.01em;
 }
 
-.checkbox-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 .checkbox-label__input {
   position: absolute;
   width: 1px;
@@ -696,7 +689,6 @@ input:focus ~ .form-field__icon {
 }
 
 .checkbox-label__link {
-  margin-left: 5px;
   color: #2196f3;
   text-decoration-line: underline;
 }
@@ -1086,6 +1078,48 @@ input:focus ~ .form-field__icon {
 
 .menu-button.menu-button.is-open .icon-menu {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    overflow-y: scroll;
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 450px;
+    width: calc(100% - 30px);
+  }
+}
+
+/*Form modal*/
+@media screen and (max-width: 767px) {
+  .signup-form__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .checkbox-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {

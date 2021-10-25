@@ -1,0 +1,38 @@
+.backdrop {
+  @media screen and (max-width: 767px) {
+    overflow-y: scroll;
+  }
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+    width: calc(100% - 30px);
+  }
+}
+
+/*Form modal*/
+.signup-form__title {
+  @media screen and (max-width: 767px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: (23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-color;
+  }
+}
+
+.checkbox-label {
+  @media screen and (max-width: 767px) {
+    @include fontStyle(400, 12px, 14px, 0.03em);
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+}
