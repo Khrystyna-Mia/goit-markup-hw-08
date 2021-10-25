@@ -1,5 +1,5 @@
 .backdrop {
-  @media screen and (max-width: 767px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     overflow-y: scroll;
   }
 }
@@ -9,15 +9,14 @@ body.modal-open {
 }
 
 .modal {
-  @media screen and (max-width: 767px) {
-    max-width: 450px;
-    width: calc(100% - 30px);
+  @media (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
   }
 }
 
 /*Form modal*/
 .signup-form__title {
-  @media screen and (max-width: 767px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     font-family: Roboto;
     font-style: normal;
     font-weight: 700;
@@ -30,8 +29,7 @@ body.modal-open {
 }
 
 .checkbox-label {
-  @media screen and (max-width: 767px) {
+  @media (min-width: 768px) and (max-width: 1199px) {
     @include fontStyle(400, 12px, 14px, 0.03em);
-    display: inline-block;
   }
 }
