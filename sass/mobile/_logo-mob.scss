@@ -1,11 +1,11 @@
-.logo-header {
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .logo-header {
     @include fontStyle(700, 24px, 28px, 0.03em);
   }
 }
 
-.logo-footer {
-  @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .logo-footer {
     @include fontStyle(700, 24px, 28px, 0.03em);
     text-align: center;
   }

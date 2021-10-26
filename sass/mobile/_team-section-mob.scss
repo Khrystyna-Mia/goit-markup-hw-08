@@ -1,7 +1,19 @@
 @media screen and (max-width: 767px) {
+  .team__title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .team-list__item {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
 }
+
+// @media screen and (max-width: 767px) {
+//   .team-link {
+//     margin-bottom: 24px;
+//   }
+// }

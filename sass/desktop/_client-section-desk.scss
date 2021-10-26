@@ -1,0 +1,20 @@
+.client-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    @include negativeMargin();
+  }
+}
+
+.client-list__item {
+  @media screen and (min-width: 1200px) {
+    @include alignCards(6, 30px);
+  }
+}
+
+.client-list__link {
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
+}
