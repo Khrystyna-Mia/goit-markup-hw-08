@@ -1,0 +1,29 @@
+.container.footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footer-social {
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 70px;
+  }
+}
+
+.social {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.social__item {
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
