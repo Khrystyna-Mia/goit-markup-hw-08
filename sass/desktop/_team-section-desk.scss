@@ -1,0 +1,14 @@
+.team-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.team-list__item {
+  @media screen and (min-width: 1200px) {
+    @include alignCards(4, 30px);
+    max-width: 270px;
+  }
+}
