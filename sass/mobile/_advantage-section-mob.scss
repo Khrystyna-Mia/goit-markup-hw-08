@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) {
+  .advantage-cards__item {
+    margin-top: -30px;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .advantage-cards__thumb {
+    width: 100%;
+  }
+
+  .advantage-cards__title {
+    text-align: center;
+  }
+}
