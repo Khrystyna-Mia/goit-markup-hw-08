@@ -328,11 +328,9 @@ summary {
   }
 }
 
-@media (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 @media (max-width: 767px) {
@@ -346,6 +344,13 @@ summary {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 

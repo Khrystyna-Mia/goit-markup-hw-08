@@ -328,11 +328,9 @@ summary {
   }
 }
 
-@media (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 @media (max-width: 767px) {
@@ -346,6 +344,13 @@ summary {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1139,9 +1144,6 @@ body.modal-open {
 }
 
 @media screen and (max-width: 767px) {
-  .advantage-cards__item {
-    margin-top: -30px;
-  }
   .advantage-cards__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1150,6 +1152,12 @@ body.modal-open {
   }
   .advantage-cards__title {
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .work {
+    display: none;
   }
 }
 
@@ -1227,6 +1235,12 @@ body.modal-open {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo-header {
     font-weight: 700;
@@ -1299,6 +1313,13 @@ body.modal-open {
     flex-basis: calc(100 / 4 - 30px);
     margin-left: 30px;
     max-width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work-cards {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 /*# sourceMappingURL=main.css.map */
