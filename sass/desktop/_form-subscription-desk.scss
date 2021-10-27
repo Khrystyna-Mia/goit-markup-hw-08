@@ -1,0 +1,22 @@
+.form-subscription {
+  @media (min-width: 1200px) {
+    margin-top: 12px;
+    margin-left: 93px;
+  }
+}
+
+.form-subscription__input {
+  @media (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.form-subscription__btn {
+  @media (min-width: 1200px) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 12px;
+  }
+}
