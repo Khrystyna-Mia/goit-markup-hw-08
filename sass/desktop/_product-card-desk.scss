@@ -1,0 +1,17 @@
+.card-set {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    @include negativeMargin();
+  }
+}
+
+.card-set__item {
+  @media screen and (min-width: 1200px) {
+    @include alignCards(3, 30px);
+
+    &:nth-child(-n + 6) {
+      margin-bottom: 30px;
+    }
+  }
+}

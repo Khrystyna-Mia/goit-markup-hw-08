@@ -1,0 +1,6 @@
+.filter {
+  @media (min-width: 768px) and (max-width: 1199px) {
+    @include centeredFlex();
+    margin-top: 60px;
+  }
+}

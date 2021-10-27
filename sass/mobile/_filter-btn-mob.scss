@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px) {
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter__btn {
+    margin-bottom: 15px;
+  }
+}
