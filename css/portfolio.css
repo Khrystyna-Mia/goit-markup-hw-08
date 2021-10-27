@@ -758,20 +758,6 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
-  .filter {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 60px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .filter__btn {
-    margin-bottom: 15px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .backdrop {
     overflow-y: scroll;
   }
@@ -869,6 +855,20 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter__btn {
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 767px) {
   .card-set__item:not(:last-child) {
     margin-bottom: 30px;
@@ -927,6 +927,13 @@ body.modal-open {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .page-header-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .logo-header {
     font-weight: 700;
@@ -946,11 +953,9 @@ body.modal-open {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .filter {
+  .site-nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
+    margin-left: 88px;
   }
 }
 
@@ -1065,6 +1070,15 @@ body.modal-open {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
   .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -1154,20 +1168,6 @@ body.modal-open {
     font-size: 24px;
     line-height: 1.16667;
     letter-spacing: 0.03em;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .filter__btn {
-    margin-top: 94px;
   }
 }
 
@@ -1269,6 +1269,20 @@ body.modal-open {
   .client-list__link {
     width: 170px;
     height: 92px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter__btn {
+    margin-top: 94px;
   }
 }
 
