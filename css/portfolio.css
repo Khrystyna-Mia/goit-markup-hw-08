@@ -752,6 +752,22 @@ textarea {
   background-color: #ffffff;
 }
 
+.menu-container.is-open {
+  display: block;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.menu-container .menu-toggle {
+  display: block;
+}
+
+.mobile-nav {
+  display: block;
+}
+
 .mobile-nav__link {
   color: #212121;
   font-weight: 500;
@@ -761,6 +777,10 @@ textarea {
   text-decoration: none;
 }
 
+.mobile-contacts {
+  display: block;
+}
+
 .mobile-contacts__link {
   color: #757575;
   font-weight: 500;
@@ -768,6 +788,14 @@ textarea {
   line-height: 1.17647;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.mobile-social {
+  display: block;
+}
+
+.mobile-social__item {
+  display: block;
 }
 
 .mobile-social__link {
