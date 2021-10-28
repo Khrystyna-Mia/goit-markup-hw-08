@@ -385,7 +385,9 @@ textarea {
   clip: rect(0 0 0 0);
 }
 
-.site-nav, .contacts, .card-set, .footer-contacts, .social {
+.site-nav, .contacts, .card-set, .footer-contacts, .social, .mobile-nav,
+.mobile-contacts,
+.mobile-social {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -737,24 +739,44 @@ textarea {
   }
 }
 
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
 }
 
-.menu-button .icon-cross {
-  display: none;
+.mobile-nav__link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-.menu-button.is-open .icon-cross {
-  display: block;
+.mobile-contacts__link {
+  color: #757575;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17647;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
-.menu-button.menu-button.is-open .icon-menu {
-  display: none;
+.mobile-social__link {
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22222;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {

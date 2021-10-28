@@ -1,19 +1,50 @@
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
+.mobile-nav,
+.mobile-contacts,
+.mobile-social {
+  @extend %lists;
 }
 
-.menu-button .icon-cross {
-  display: none;
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: $white-color;
 }
 
-.menu-button.is-open .icon-cross {
-  display: block;
+.menu-container.is-open {
 }
-
-.menu-button.menu-button.is-open .icon-menu {
-  display: none;
+.menu-toggle {
+}
+.menu-container .menu-toggle {
+}
+.mobile-nav {
+}
+.mobile-nav__link {
+  color: $title-color;
+  @include fontStyle(500, 40px, 47px, 0.02em);
+  text-decoration: none;
+}
+.mobile-contacts {
+}
+.mobile-contacts__link {
+  color: $text-color;
+  @include fontStyle(500, 34px, 40px, 0.02em);
+  text-decoration: none;
+}
+.mobile-social {
+}
+.mobile-social__item {
+}
+.mobile-social__link {
+  color: $accent-color;
+  @include fontStyle(500, 18px, 22px, 0.02em);
+  text-decoration: none;
 }
