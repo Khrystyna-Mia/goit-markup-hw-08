@@ -18,7 +18,7 @@
   @include fontStyle(500, 14px, 16px, 0.02em);
   text-decoration: none;
 
-  display: block;
+  // display: block;
   margin-bottom: 0px;
   // padding-top: 32px;
   // padding-bottom: 32px;
@@ -47,9 +47,9 @@
 //   }
 // }
 
-.site-nav__link {
-  &:hover::after,
-  &:focus::after {
-    opacity: 1;
-  }
-}
+// .site-nav__link {
+//   &:hover::after,
+//   &:focus::after {
+//     opacity: 1;
+//   }
+// }
