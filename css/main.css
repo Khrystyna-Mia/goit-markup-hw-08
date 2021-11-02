@@ -902,7 +902,7 @@ input:focus ~ .form-field__icon {
   letter-spacing: 0.03em;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 /* Social links */
@@ -910,7 +910,7 @@ input:focus ~ .form-field__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .team-icon {
