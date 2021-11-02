@@ -1,4 +1,10 @@
 @media screen and (min-width: 1200px) {
+  .page-header__nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+
   .site-nav {
     display: flex;
     margin-left: 93px;

@@ -1,9 +1,11 @@
 .page-header {
+  width: 100%;
+  min-height: 80px;
   border-bottom: 1px solid $border-color;
 }
 
-.page-header__nav {
-  @include centeredFlex(flex);
-  width: 100%;
-  // min-height: 80px;
-}
+// .page-header__navigation {
+//   // @include centeredFlex(flex);
+//   // width: 100%;
+//   // min-height: 80px;
+// }
