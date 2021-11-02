@@ -88,13 +88,16 @@
   // display: block;
 }
 
+// .mobile-nav__link--active {
+//   color: $accent-color;
+//   @include fontStyle(500, 40px, 47px, 0.02em);
+// }
+
 .mobile-contacts {
   margin-bottom: 64px;
 }
 
 .mobile-contacts__item {
-  display: block;
-
   &:not(:last-child) {
     margin-bottom: 32px;
   }

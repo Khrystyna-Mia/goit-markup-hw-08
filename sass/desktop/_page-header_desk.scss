@@ -1,0 +1,7 @@
+.page-header__nav {
+  @media screen and (min-width: 1200px) {
+    @include centeredFlex(flex, center);
+    width: 100%;
+    min-height: 80px;
+  }
+}

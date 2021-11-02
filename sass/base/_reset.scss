@@ -8,6 +8,11 @@ body {
   color: #757575;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
