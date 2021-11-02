@@ -10,6 +10,8 @@
   }
 
   .contacts__link {
+    @include fontStyle(500, 14px, 16px, 0.02em);
+
     display: inline-flex;
     justify-content: center;
     align-items: center;

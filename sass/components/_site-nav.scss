@@ -32,24 +32,24 @@
   }
 }
 
-// .site-nav__link {
-//   // position: relative;
+.site-nav__link {
+  position: relative;
 
-//   &::after {
-//     @include position();
-//     bottom: -1px;
-//     left: 0;
-//     width: 100%;
-//     height: 4px;
-//     background-color: $accent-color;
-//     border-radius: 2px;
-//     opacity: 0;
-//   }
-// }
+  &::after {
+    @include position();
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    opacity: 0;
+  }
+}
 
-// .site-nav__link {
-//   &:hover::after,
-//   &:focus::after {
-//     opacity: 1;
-//   }
-// }
+.site-nav__link {
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+}
